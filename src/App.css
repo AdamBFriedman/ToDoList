@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  background: radial-gradient(to bottom right, #fdb927, #006bb6, #fdb927);
+}
+
+header > h1 {
+  font-family: copperplate, sans-serif;
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 50px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.app {
+  background: #006bb6;
+  height: 100vh;
+}
+
+.todo-list {
+  background: #fdb927;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 600px;
+  height: 500px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-image: url('./warriors3.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 3px 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #006bb6;
+  font-family: copperplate, sans-serif;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 3rem;
+  height: 2.25em;
+  color: #006bb6;
+}
+
+input::placeholder {
+  color: #006bb6;
+}
+
+#buttonComplete {
+  color: #006bb6;
+  padding: 2px;
+  margin-right: 20px;
+}
+
+#buttonDelete {
+  color: #006bb6;
+  padding: 2px;
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .todo-list {
+    max-width: 600px;
+    height: 68vh;
+    position: relative;
+    top: 40%;
+    background-image: url(warriors2.png);
+  }
+  }  
+  
+  /* Mobile */
+  @media screen and (max-width: 500px) {
+
+  .todo {
+    padding: 1px;
+    font-size: 8px;
+  }
+
+  .todo-list {
+    max-width: 370px;
+    height: 68vh;
+    position: relative;
+    top: 40%;
+  }
+
+  #buttonComplete {
+    margin: 0;
+  }
+  }
+  
+  /* XS Mobile */
+  @media screen and (max-width: 375px) {
+
+  .todo-list {
+    max-width: 310px;
+    height: 72vh;
+    position: relative;
+    top: 40%;
+  }
+  }
+   /* iPhone 5/SE */
+   @media (max-width: 320px) and (min-width: 320px) {
+
+    .todo-list {
+      max-width: 310px;
+      height: 70vh;
+      position: relative;
+      top: 40%;
+      background-image: url(warriors4.png);
+    }
+  }
